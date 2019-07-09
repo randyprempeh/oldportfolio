@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+ html {
+  overflow-x: hidden;
+  }
+
+
+.navy  {
+ width: 100%;
+ background: linear-gradient(#000, #363636);
+ background: -moz-linear-gradient(#000, #363636);
+ background: -webkit-linear-gradient(#000, #363636);
+ overflow: hidden;
+ padding: 20px;
+ text-align: right;
+ display: block;
+}
+
+
+.navy a {
+     text-shadow: 1px 1px 0 #222;
+     text-decoration: none;
+     padding: 2.5rem;
+     color: white;  
+     list-style: none;
+     font-size: 19px;    
+}
+
+
+.navy a:hover {
+  text-decoration: none;
+  color: #f3452d;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
+.about-wrapper {
+  background:url(./images/road.jpeg);
+  background-position: center;
+  background-repeat:repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.route-enter, .route-appear {
+  opacity: 0;
+  animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+.route-leave { 
+
+  animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+.route-appear { 
+  opacity: 0;
+  animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.thumbnail-pic {
+  border-radius: 50%;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+
+.logo img {
+  width: 15rem;
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  padding: 3px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+ .Home-body {
+  position: relative;
+  bottom: 100px;
+} 
+
+.foot-container {
+width: 100%;
+height: 100vh;  
+background: rgba(0,0,0,.8);
+}
+ 
+.content-wrapper:hover {
+    cursor: pointer; 
+  }
+ 
+.contact-wrap {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  
+  .wrapper {
+    position: relative;
+    bottom: 50px;
+    padding: 0 10px;
+    margin-bottom: 5px; 
+  }
+
+  .port-body {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  .social-media {
+    position: absolute;
+    left: 0;
+  }
+ 
+  .contact-form {
+   max-width: 650px;
+   margin : 0 70px;
+   background: rgba(0,0,0,.8);
+   padding: 30px;
+   border-radius: 5px;
+   display: flex;
+   box-shadow: 0 0 10px;
+  }
+
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+
+  .input-fields,
+  .msg {
+    width: 48%;
+  }
+
+  .input-fields .input, 
+  .msg textarea {
+   margin : 10px 5px;
+   background: transparent;
+   border: 0;
+   border-bottom: 2px solid #c5ecfd; 
+   padding: 10px;
+   color:  #c5ecfd;
+   width: 100%;
+  }
+
+  .msg textarea {
+    height: 212px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #c5ecfd;
+    opacity: 0.3;
+  }
+
+     button {
+     border: none;
+     color:  #35f4cd;
+     background: transparent;
+     padding: 5px;
+   }
+  
+  
+  .btn,
+  button  {
+   cursor: pointer;
+   text-transform: uppercase;
+   width: 100%;
+   border: 2px solid palevioletred;
+  }
+
+
+  button:hover {
+    border: none;
+    background: palevioletred;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+  }
+   
+    /* hover effects on icons */
+    button.sm-class:hover {
+      width: 150%;
+      transition: width 0.5ms linear;
+      border-right: 3px solid white; 
+    }
+   
+
+  @media screen and (max-width:600px){
+    .contact-form {
+      flex-direction: column;
+    }
+    .msg textarea {
+      height: 80px;
+    }
+    .input-fields,
+    .msg {
+      width: 100%;
+    }
+  }
+
+
+/* Media Queries
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+     /* homepage */
+  .logo img {
+    margin-left: 4rem;
+  }
+  .foot-container p {
+    padding: 5rem;
+    margin: 6rem 7rem 4rem 6rem;
+  }
+  section.main {
+  margin-bottom: 50px;
+  }
+
+ .btn button {
+  font-size: 27px;
+  font-weight: 900;
+  }
+
+    /* about */
+    .about-wrapper{
+      display: block;
+      background-repeat: no-repeat;
+    }
+  
+    .display p { 
+        padding: 4rem 1rem 2rem 3rem;
+        font-size: 2rem;
+      }
+
+   /* contact */
+      .wrapper {
+        left:25%;
+     }
+     .contact-form {
+      width: 170%;
+     }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* navigation */
+.navy {
+  padding:  1rem 7rem;
+  } 
+.navy a{
+  font-size: 19px;
+  padding: 2rem;
+  } 
+
+  /* homepage */
+  .foot-container p {
+    font-size: 4rem;
+    padding: 10rem 1.7rem;
+    margin: 100px 50px;
+  }
+
+section.main {
+  margin-bottom: 50px;
+}
+.btn button {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+  /* about */
+    .about-wrapper{
+      display: block;
+      padding-bottom: 50px;
+      background-repeat: no-repeat;
+    }
+
+  /* contact */   
+    .wrapper {
+      width: 100%;
+      left:0;
+   }
+   .contact-form {
+    margin: 50px auto;
+   }
+}
+
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+ /* navigation */
+ .navy a {
+  font-size: 17px;
+  padding: 30px;
+}
+.logo img {
+    width: 10rem;
+    margin-left:0.3rem;
+}
+ 
+  /* homepage */
+  .foot-container p {
+    font-size: 4rem;
+  }
+  section.main {
+    margin-bottom: 10px;
+  }
+  .btn button {
+     font-size: 20px;
+     font-weight: 500;
+  }
+
+    /* about */
+    .about-wrapper{
+      display: block;
+      padding-bottom: 38px;
+      background-repeat: no-repeat;
+    }
+   
+    /* contact */   
+    .contact-wrap {
+      padding: 0;
+     }
+  
+     .wrapper {
+      width: 90%; 
+      left: 3%;
+      margin: 50px;
+   }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+ /* navigation */
+  .navy a{
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  /* homepage */
+  header.kNYnGL {
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+  }
+  .foot-container p {
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+
+  path.circle {
+    display: none;
+   }
+
+  section.main {
+     margin-bottom: 7px;
+   }
+
+.btn button {
+  margin: 0.5rem auto;
+   font-size: 16px;
+   padding: 0.5em;
+   }
+    /* about */
+    .about-wrapper{
+      display: block;
+      padding-bottom: 26px;
+      background-repeat: no-repeat;
+    }
+    
+    .display{
+      display: flex;
+      flex-direction: column
+    }
+    .display p { 
+      font-size: 0.9em;
+        line-height: 1.5;
+        padding: 2rem 3.5rem;
+    }
+
+    /* contact */   
+    .contact-wrap {
+      padding: 30px 50px;
+     }
+     .wrapper {
+       width: 90%; 
+       top: 48%;
+       left:5%;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+ @media (min-width: 320px) and (max-width: 480px) {
+ /* navigation */
+  .navy {
+    background: #000;
+    height: 150px;  
+    padding: 15px;
+ } 
+ .navy a {
+    font-size: 9px;
+    padding: 0.7rem;
+ }
+ 
+ .logo img {
+    width: 5rem;
+    left: 7%;
+    padding: 1px;
+}
+
+  /* homepage */
+.Home-body {
+  display: block;
+}
+
+
+.foot-container p {
+  font-size: 1.9rem;
+  padding:  5rem 0;
+  margin: 4px 20px;
+} 
+
+path.circle {
+    display: none;
+}
+
+.btn button {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem auto;
+   font-size: 13px;
+   padding: 0.5em;
+}
+
+section.main {
+  margin-bottom: 4px;
+}
+
+    /* about */
+.about-wrapper{
+  display: block;
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+ }
+   
+
+   /* contact */
+   .contact-wrap {
+    margin-bottom: 50px;
+   }
+  .wrapper {
+     padding: 5px 0;
+     margin: 50px 0 20px 0;
+  }
+  .contact-form {
+   margin: 0 30px;
+  }
+} 
+
+
+
