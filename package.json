@@ -6,7 +6,7 @@
     "npm": "6.3.0",
     "node": "8.9.4"
   },
-  "homepage": "https:/randyprempeh.github.io/personalwebsite",
+  "homepage": "http://randyprempeh.github.io/oldportfolio",
   "dependencies": {
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.3",
