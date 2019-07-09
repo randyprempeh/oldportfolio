@@ -12,7 +12,7 @@ import logoImg from "./images/rp1.png";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename ="/directory-name">
         <div className="Container">
           <Navigation />
           <div className="logo"><img src={logoImg} alt="logo"/></div>
